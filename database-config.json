@@ -1,0 +1,5 @@
+{
+    "url": "<put url to your hsql database>",
+    "user": "<put user name>",
+    "password": "<put user password>"
+}

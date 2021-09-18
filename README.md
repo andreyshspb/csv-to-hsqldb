@@ -2,8 +2,8 @@
 
 The program need to know about your hsql database
 where you want to storage data. For this purpose
-you need to create json config file that has the
-following structure:
+you need to fill `database-config.json` file 
+or create json config file that has the following structure:
 ```json
 {
     "url": "jdbc:hsqldb:file:testing",
@@ -13,7 +13,7 @@ following structure:
 ```
 
 Now we can run program:
-```
+```shell
 ./table-creation --config database-config.json \
                  --file students.csv \
                  --table students
