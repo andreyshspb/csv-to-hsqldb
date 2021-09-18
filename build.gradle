@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.hsqldb:hsqldb:2.6.0")
+    implementation("net.sf.opencsv:opencsv:2.3")
+    implementation("org.json:json:20210307")
+    implementation("commons-cli:commons-cli:1.4")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
+    testImplementation("org.hibernate:hibernate-core:5.5.7.Final")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.2")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+apply plugin : "java"
+ext {
+    javaMainClass = "ru.hse.hsqldb.TableCreationProgram"
+}
+
+application {
+    mainClassName = javaMainClass
+}

@@ -1,0 +1,5 @@
+{
+    "url": "jdbc:hsqldb:file:testing",
+    "user": "andreyshspb",
+    "password": "forever18"
+}
