@@ -25,7 +25,7 @@ public class CSVWrapper {
 
     public String getCreationQuery(String tableName) {
         return Arrays.stream(columns)
-                .map(name -> name + " VARCHAR(32)")
+                .map(name -> name + " VARCHAR(255)")
                 .collect(Collectors.joining(
                         ",\n    ",
                         "CREATE TABLE " + tableName + " (\n    ",
