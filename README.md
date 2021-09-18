@@ -1,5 +1,7 @@
 # RUNNING
 
+For running the program you need to have `java 16`
+
 The program need to know about your hsql database
 where you want to storage data. For this purpose
 you need to fill `database-config.json` file 
