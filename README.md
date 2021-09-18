@@ -14,9 +14,7 @@ or create json config file that has the following structure:
 
 Now we can run program:
 ```shell
-./table-creation --config database-config.json \
-                 --file students.csv \
-                 --table students
+./table-creation --config database-config.json --file students.csv --table students
 ```
 
 This command import data from `students.csv` file
